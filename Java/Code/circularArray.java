@@ -3,7 +3,7 @@ package Java.Code;
 public class circularArray {
     public static void main(String[] args) {
 
-        int[] arr = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 0, 0 };
+        int[] arr = { 10, 20, 30, 40, 50, 60, 70, 80, 90 };
         int[] CircularArray = createCircularArray(arr, 7);
         System.out.println(arr[2]);
         System.out.println("=====================================");
@@ -13,7 +13,7 @@ public class circularArray {
 
     }
 
-    private static int[] createCircularArray(int[] Array, int start) {
+    public static int[] createCircularArray(int[] Array, int start) {
 
         int[] CircularArray = new int[Array.length];
 

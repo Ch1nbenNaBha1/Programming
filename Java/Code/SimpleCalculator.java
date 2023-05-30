@@ -1,5 +1,7 @@
 package Java.Code;
 
+import Java.Code.SimpleCalculator;
+
 public class SimpleCalculator {
 
     public static int ADD(int x, int y) {
