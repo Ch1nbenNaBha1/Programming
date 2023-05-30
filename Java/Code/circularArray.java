@@ -1,4 +1,4 @@
-package Java;
+package Java.Code;
 
 public class circularArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Java;
+package Java.Code;
 
 public class Arrays {
     public static void main(String[] args) {
