@@ -1,5 +1,5 @@
 
-package Java.lib;
+package lib;
 
 import Java.Code.SimpleCalculator;
 import org.junit.*;
