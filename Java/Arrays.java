@@ -83,16 +83,6 @@ public class Arrays {
         return Array;
     }
 
-    private static int[] shiftLeft(int[] Array, int k) {
-        for (int i = 0; i < Array.length - k; i++) {
-            Array[i] = Array[i + k];
-        }
-        for (int i = Array.length - k; i < Array.length; i++) {
-            Array[i] = 0;
-        }
-        return Array;
-    }
-
     public static int[] remove(int[] Array, int index, int size) {
         if (index >= size || index < 0) {
             System.out.println("Invalid index");
