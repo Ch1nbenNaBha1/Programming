@@ -10,7 +10,7 @@ public class circularArrayTester {
         circularArray circularArray = new circularArray();
 
         int[] arr = { 10, 20, 30, 40, 50, 60, 70, 80, 90 };
-        int[] CircularArray = circularArray.createCircularArray(arr, 7);
+        final int[] CircularArray = circularArray.createCircularArray(arr, 7);
         assert CircularArray[0] == 30;
         assert CircularArray[1] == 40;
         assert CircularArray[2] == 50;
