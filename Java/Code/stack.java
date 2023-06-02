@@ -39,17 +39,14 @@ public class stack {
             current = current.next;
         }
     }
+
     public static void main(String[] args) {
-
         stack stack = new stack();
-     
-
         stack.push(20);
         stack.push(30);
         stack.push(40);
         stack.push(50);
         stack.push(60);
-
         stack.printList();
     }
 }
