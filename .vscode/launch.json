@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Arrays",
+            "request": "launch",
+            "mainClass": "Java.Code.Arrays",
+            "projectName": "Programming_70a61a3b"
+        },
+        {
+            "type": "java",
             "name": "stack",
             "request": "launch",
             "mainClass": "Java.Code.stack",
