@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PracticeSheet",
+            "request": "launch",
+            "mainClass": "Java.Code.PracticeSheet",
+            "projectName": "Programming_df9f1d5d"
+        },
+        {
+            "type": "java",
             "name": "stack",
             "request": "launch",
             "mainClass": "Java.Code.stack",
