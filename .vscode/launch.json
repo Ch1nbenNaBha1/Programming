@@ -9,6 +9,13 @@
             "name": "Lab1",
             "request": "launch",
             "mainClass": "Lab1",
+            "projectName": "Programming_d4836197"
+        },
+        {
+            "type": "java",
+            "name": "Lab1",
+            "request": "launch",
+            "mainClass": "Lab1",
             "projectName": "Programming_df9f1d5d"
         },
         {
