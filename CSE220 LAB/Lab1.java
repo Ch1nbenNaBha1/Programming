@@ -106,6 +106,7 @@ class Lab1 {
         }
         return array;
     }
+
     public static int[] waveYourFlag(int[] arr) {
         // Your implementation for Task 6 goes here
         return null;
@@ -119,60 +120,112 @@ class Lab1 {
 
     public static void main(String[] args) {
         System.out.println("///  Test 01: Play Right  ///");
-        int[] sequence = {10, 20, 30, 40, 50, 60};
-        int[] beats = {1, 0, 0, 1, 0, 1};
+        int[] sequence = { 10, 20, 30, 40, 50, 60 };
+        int[] beats = { 1, 0, 0, 1, 0, 1 };
         int[] returnedValue = playRight(sequence, beats);
+        int[] expectedValue = { 40, 50, 60, 10, 20, 30 };
         System.out.println("Task 1: " + Arrays.toString(returnedValue));
+        if (Arrays.equals(returnedValue, expectedValue))
+            System.out.println("Test 01 Passed");
+        else
+            System.out.println("Test 01 Failed");
 
         System.out.println("///  Test 02: Discard Cards  ///");
-        int[] cards = {1, 2, 3, 2, 8, 2, 2, 5, 7};
+        int[] cards = { 1, 2, 3, 2, 8, 2, 2, 5, 7 };
         int[] returnedValue2 = discardCards(cards, 2);
+        int[] expectedValue2 = { 1, 3, 8, 5, 7, 0, 0, 0, 0 };
         System.out.println("Task 2: " + Arrays.toString(returnedValue2));
+        if (Arrays.equals(returnedValue2, expectedValue2))
+            System.out.println("Test 02 Passed");
+        else
+            System.out.println("Test 02 Failed");
 
         System.out.println("///  Test 03: Merge Lineup  ///");
-        int[] pokemon_1 = {12, 3, 25, 1, 0};
-        int[] pokemon_2 = {5, -9, 3, 0, 0};
+        int[] pokemon_1 = { 12, 3, 25, 1, 0 };
+        int[] pokemon_2 = { 5, -9, 3, 0, 0 };
         int[] returnedValue3 = mergeLineup(pokemon_1, pokemon_2);
+        int[] expectedValue3 = { 12, 3, 28, -8, 5 };
         System.out.println("Task 3: " + Arrays.toString(returnedValue3));
+        if (Arrays.equals(returnedValue3, expectedValue3))
+            System.out.println("Test 03 Passed");
+        else
+            System.out.println("Test 03 Failed");
 
-        int[] pokemon_1b = {4, 5, -1, 0, 0};
-        int[] pokemon_2b = {2, 27, 7, 12, 0};
+        int[] pokemon_1b = { 4, 5, -1, 0, 0 };
+        int[] pokemon_2b = { 2, 27, 7, 12, 0 };
         int[] returnedValue3b = mergeLineup(pokemon_1b, pokemon_2b);
+        int[] expectedValue3b = { 4, 17, 6, 27, 2 };
         System.out.println("Task 3: " + Arrays.toString(returnedValue3b));
 
-        int[] pokemon_1c = {4, 5, 0, 0};
-        int[] pokemon_2c = {2, 0, 0, 0};
+        if (Arrays.equals(returnedValue3b, expectedValue3b))
+            System.out.println("Test 03 Passed");
+        else
+            System.out.println("Test 03 Failed");
+
+        int[] pokemon_1c = { 4, 5, 0, 0 };
+        int[] pokemon_2c = { 2, 0, 0, 0 };
         int[] returnedValue3c = mergeLineup(pokemon_1c, pokemon_2c);
+        int[] expectedValue3c = { 4, 5, 0, 2 };
         System.out.println("Task 3: " + Arrays.toString(returnedValue3c));
 
+        if (Arrays.equals(returnedValue3c, expectedValue3c))
+            System.out.println("Test 03 Passed");
+        else
+            System.out.println("Test 03 Failed");
+
         System.out.println("///  Test 04: Balance Your Salami  ///");
-        int[] salami = {1, 1, 1, 2, 1};
+        int[] salami = { 1, 1, 1, 2, 1 };
         boolean returnedValue4 = balanceSalami(salami);
+        boolean expectedValue4 = true;
         System.out.println("Task 4: " + returnedValue4);
+        if (returnedValue4 == expectedValue4)
+            System.out.println("Test 04 Passed");
+        else
+            System.out.println("Test 04 Failed");
 
-        int[] salami2 = {2, 1, 1, 2, 1};
+        int[] salami2 = { 2, 1, 1, 2, 1 };
         boolean returnedValue4b = balanceSalami(salami2);
+        boolean expectedValue4b = false;
         System.out.println("Task 4: " + returnedValue4b);
+        if (returnedValue4b == expectedValue4b)
+            System.out.println("Test 04 Passed");
+        else
+            System.out.println("Test 04 Failed");
 
-        int[] salami3 = {10, 3, 1, 2, 10};
+        int[] salami3 = { 10, 3, 1, 2, 10 };
         boolean returnedValue4c = balanceSalami(salami3);
+        boolean expectedValue4c = true;
         System.out.println("Task 4: " + returnedValue4c);
+        if (returnedValue4c == expectedValue4c)
+            System.out.println("Test 04 Passed");
+        else
+            System.out.println("Test 04 Failed");
 
         System.out.println("///  Test 05: Protecc Salami  ///");
-        int[] salami4 = {4, 5, 6, 6, 4, 3, 6, 4};
+        int[] salami4 = { 4, 5, 6, 6, 4, 3, 6, 4 };
         boolean returnedValue5 = protectSalami(salami4);
+        boolean expectedValue5 = true;
         System.out.println("Task 5: " + returnedValue5);
+        if (returnedValue5 == expectedValue5)
+            System.out.println("Test 05 Passed");
+        else
+            System.out.println("Test 05 Failed");
 
-        int[] salami5 = {3, 4, 6, 3, 4, 7, 4, 6, 8, 6, 6};
+        int[] salami5 = { 3, 4, 6, 3, 4, 7, 4, 6, 8, 6, 6 };
         boolean returnedValue5b = protectSalami(salami5);
+        boolean expectedValue5b = false;
         System.out.println("Task 5: " + returnedValue5b);
+        if (returnedValue5b == expectedValue5b)
+            System.out.println("Test 05 Passed");
+        else
+            System.out.println("Test 05 Failed");
 
         System.out.println("///  Test 06: Odd Even Wave  ///");
-        int[] arr = {2, 12, 3, 8, 1, 5};
+        int[] arr = { 2, 12, 3, 8, 1, 5 };
         int[] returnedValue6 = waveYourFlag(arr);
         System.out.println("Task 6: " + Arrays.toString(returnedValue6));
 
-        int[] arr2 = {45, 23, 78, 84, 41};
+        int[] arr2 = { 45, 23, 78, 84, 41 };
         int[] returnedValue6b = waveYourFlag(arr2);
         System.out.println("Task 6: " + Arrays.toString(returnedValue6b));
     }
