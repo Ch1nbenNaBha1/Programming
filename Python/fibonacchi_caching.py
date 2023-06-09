@@ -1,26 +1,22 @@
-import time as Time
-start_time = Time.time()
-SUM = 0
+from functools import lru_cache
 
-fibonacchi_cache = {}
 
+@lru_cache(maxsize=1000)
 def fibonacchi(n):
-    if n in fibonacchi_cache:
-        return fibonacchi_cache[n]
+    # Check that the input is a positive integer
+    if type(n) != int:
+        raise TypeError("n must be a positive integer")
+    if n < 1:
+        raise TypeError("n must be a positive integer")
 
+    # Compute the Nth term
     if n == 1:
-        value = 1
+        return 1
     elif n == 2:
-        value = 1
+        return 1
     elif n > 2:
-        value = fibonacchi(n-1) + fibonacchi(n-2)
-
-    fibonacchi_cache[n] = value
-    return value
-
-for i in range(1 , 1001):
-    SUM += fibonacchi(i)
+        return fibonacchi(n-1) + fibonacchi(n-2)
 
 
-print(Time.time() - start_time)
-print(SUM)
+for n in range(2, 1101):
+    print(fibonacchi(n) / fibonacchi(n-1))
