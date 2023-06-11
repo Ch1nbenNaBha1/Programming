@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LAB2",
+            "request": "launch",
+            "mainClass": "LAB2",
+            "projectName": "Programming_d4836197"
+        },
+        {
+            "type": "java",
             "name": "Lab1",
             "request": "launch",
             "mainClass": "Lab1",
