@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LinkedList",
+            "request": "launch",
+            "mainClass": "Java.Code.LinkedList",
+            "projectName": "Programming_cd5a3e04"
+        },
+        {
+            "type": "java",
+            "name": "Arrays",
+            "request": "launch",
+            "mainClass": "Java.Code.Arrays",
+            "projectName": "Programming_cd5a3e04"
+        },
+        {
+            "type": "java",
             "name": "Lab1",
             "request": "launch",
             "mainClass": "Lab1",
