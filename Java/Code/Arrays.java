@@ -34,7 +34,7 @@ public class Arrays {
     }
 
     private static void printArray(int[] array, int pointer) {
-        // print the values of the array reccursively
+        // print the values of the array recursively
         if (pointer < array.length) {
             System.out.println(array[pointer]);
             printArray(array, pointer + 1);
