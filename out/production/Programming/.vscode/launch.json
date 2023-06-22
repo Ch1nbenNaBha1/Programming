@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Classes",
+      "request": "launch",
+      "mainClass": "Java.practiceCodes.Classes",
+      "projectName": "Programming_62af2daa"
+    },
+    {
+      "type": "java",
+      "name": "Week3",
+      "request": "launch",
+      "mainClass": "Java.practiceCodes.Week3",
+      "projectName": "Programming_62af2daa"
+    },
+    {
+      "type": "java",
+      "name": "Classes2",
+      "request": "launch",
+      "mainClass": "Java.Code.ObjectOrientedProgramming.Classes2",
+      "projectName": "Programming_62af2daa"
+    },
+    {
+      "type": "java",
+      "name": "Classes",
+      "request": "launch",
+      "mainClass": "Java.Code.ObjectOrientedProgramming.Classes",
+      "projectName": "Programming_62af2daa"
+    },
+    {
+      "type": "java",
       "name": "LAB2",
       "request": "launch",
       "mainClass": "LAB2",
