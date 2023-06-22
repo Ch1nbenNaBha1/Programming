@@ -4,11 +4,15 @@
   },
   "python.formatting.provider": "none",
   "files.associations": {
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "ostream": "cpp"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   }
 }
