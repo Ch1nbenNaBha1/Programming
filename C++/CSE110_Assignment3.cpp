@@ -100,16 +100,11 @@ void oddNumbers()
 int valueOfY(int n)
 {
     int sum = 0;
-    for (int i = 0; i < n + 1; i++)
+    int square;
+    for (int i = 0; i <= n; i++)
     {
-        if (i % 2 == 0)
-        {
-            sum -= i * i;
-        }
-        else
-        {
-            sum += i * i;
-        }
+        square = i * i;
+        sum += (i % 2 == 0) ? -square : square;
     }
     return sum;
 }
@@ -145,5 +140,5 @@ int main(int argc, char const *argv[])
     cout << "=================" << endl;
 
     // task6
-    cout << valueOfY(5) << endl;
+    cout << valueOfY(17000) << endl;
 }
