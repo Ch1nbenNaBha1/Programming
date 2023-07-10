@@ -1,3 +1,1 @@
-public class Lab1 {
-    
-}
+
