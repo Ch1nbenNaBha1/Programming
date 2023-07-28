@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "recurrsion",
+      "request": "launch",
+      "mainClass": "Java.Code.Basics.recurrsion",
+      "projectName": "Programming_62af2daa"
+    },
+    {
+      "type": "java",
+      "name": "Lab6",
+      "request": "launch",
+      "mainClass": "Lab6",
+      "projectName": "Programming_62af2daa"
+    },
+    {
+      "type": "java",
+      "name": "Lab5",
+      "request": "launch",
+      "mainClass": "Lab5",
+      "projectName": "Programming_62af2daa"
+    },
+    {
+      "type": "java",
       "name": "Classes",
       "request": "launch",
       "mainClass": "Java.practiceCodes.Classes",
